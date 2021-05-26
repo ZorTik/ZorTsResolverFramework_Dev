@@ -10,6 +10,6 @@ public @interface DataAll {
      *  Data Source
      */
     Class<?> source();
-    MapColumn col();
+    MapColumn col() default MapColumn.KEYS;
 
 }

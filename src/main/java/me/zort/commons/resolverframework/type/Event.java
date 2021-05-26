@@ -4,10 +4,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 @Retention(RetentionPolicy.RUNTIME)
-public @interface RepeatingTask {
+public @interface Event {
 
-    boolean queueEnabled() default false;
-    long delay() default 0L;
-    long period() default 20L;
+    Class<?> value();
 
 }

@@ -7,6 +7,7 @@ import java.lang.annotation.RetentionPolicy;
 public @interface Path {
 
     SourceAccessMoment moment() default SourceAccessMoment.EVERY;
+    SourceType type() default SourceType.FILE;
     String value();
 
 }
